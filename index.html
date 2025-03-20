@@ -1,0 +1,567 @@
+Outer Body
+
+<body data-sitemap-state="/" data-dateformat="M/d/yyyy" data-timeformat="h:mm tt" data-datetimeformat="M/d/yyyy h:mm tt" data-app-path="/" data-ckeditor-basepath="/js/BaseHtmlContentDesigner/Libs/msdyncrm_/libs/ckeditor/" data-case-deflection-url="/_services/search/f3527796-2203-4afc-b40a-c36c900f4a8c">
+
+
+	
+		<link href="https://content.powerapps.com/resource/powerappsportal/dist/pcf-style.bundle-373a0f4982.css" onerror="javascript: var target = event.target; var link = document.createElement('link'); link.crossOrigin = target.crossOrigin; link.href = '/dist/pcf-style.bundle-373a0f4982.css'; link.rel = 'stylesheet'; target.insertAdjacentElement('afterend',link);" rel="stylesheet">
+
+		
+	
+		
+
+	<div id="offlineNotificationBar" style="display: none;">
+		<img alt="web" class="col-3" id="web" onerror="javascript: var target = event.target; var img = document.createElement('img'); img.src = '/css/images/web.png'; img.alt = 'web'; img.id = 'web' ; target.insertAdjacentElement('afterend',img); target.remove();" src="https://content.powerapps.com/resource/powerappsportal/img/web.png">
+		<div id="message">You’re offline. This is a read only version of the page.</div>
+		<div id="close" onclick="this.parentElement.style.display='none';"><img alt="close" class="col-3" onerror="javascript: var target = event.target; var img = document.createElement('img'); img.src = '/css/images/close.png'; img.alt = 'close'; img.id = '' ; target.insertAdjacentElement('afterend',img); target.remove();" src="https://content.powerapps.com/resource/powerappsportal/img/close.png"></div>
+	</div>
+
+	
+
+	<script type="text/javascript">
+        window.DisableCkEditor = window.DisableCkEditor || {};
+		DisableCkEditor.Value = 'False';
+    </script>
+
+	<script type="text/javascript">
+        var enableOmniChannelWidgetWithSiteCopilot = 'False';
+        if (enableOmniChannelWidgetWithSiteCopilot === "True" || enableOmniChannelWidgetWithSiteCopilot === "true") {
+            const authUrl = window.location.origin + "/_services/auth/portalusertoken";
+            const fetchWithRetries = async (url, options, retries) => {
+                try {
+                    const authResponse = await fetch(url, options);
+                    const token = await authResponse.text();
+                    sessionStorage['c2Token'] = token;
+                } catch (err) {
+                    if (retries === 1) throw err;
+                    return await fetchWithRetries(url, options, retries - 1);
+                }
+            };
+            fetchWithRetries(authUrl, { method: "POST" }, 4);
+        }
+    </script>
+
+	<script type="text/javascript">
+		var isPvaBotAuthenticated = sessionStorage['isPvaBotAuthenticated'];
+		var isPortalUserLoggedIn = 'True';
+
+        if ((isPvaBotAuthenticated != null || isPvaBotAuthenticated != undefined) && isPvaBotAuthenticated != isPortalUserLoggedIn) {
+			sessionStorage['triggerPvaBotSignOut'] = true;
+			sessionStorage.removeItem('c2Token');
+            sessionStorage.removeItem('directLinetoken');
+            sessionStorage.removeItem('conversation_Id');
+		}
+		sessionStorage['isPvaBotAuthenticated'] = isPortalUserLoggedIn;
+    </script>
+
+	<script type="text/javascript">
+		window["Microsoft"] = window["Microsoft"] || {};
+		window["Microsoft"].Dynamic365 = {
+			Portal: {
+				
+				User: {
+					userName: 'mickyas',
+					contactId: '8a73200a-cfd9-ef11-8eea-6045bd047e58'
+				},
+				
+				version: '9.7.1.38',
+				type: 'PowerPages_BlankDesign002_V2',
+				id: 'bd6c24fa-4205-45b5-8910-670077283343', 
+				geo: 'NAM', 
+				tenant: '3c347202-6d0f-47be-9a4e-2ba9886ad9af', 
+				correlationId: 'eb095be6-86ed-4d8e-9a64-8abd0884c7fa',
+				orgEnvironmentId: 'da7c4066-07ae-ead2-8c49-52ea3b9c7515',
+				orgId: '78b6034d-137c-ef11-ac1e-6045bd003a3e',
+				portalProductionOrTrialType: 'Trial',
+				isTelemetryEnabled: 'True',
+				InstrumentationSettings: {
+					instrumentationKey: '197418c5cb8c4426b201f9db2e87b914-87887378-2790-49b0-9295-51f43b6204b1-7172',
+					collectorEndpoint: 'https://us-mobile.events.data.microsoft.com/OneCollector/1.0/'
+				},
+				timerProfileForBatching: 'NEAR_REAL_TIME',
+                activeLanguages: ["en-US"]
+			}
+		}
+
+		// Mark request not cacheable if Dynamics365PortalAnalytics cookie is being refreshed by the server or if the cookie in request header is invalid
+		
+
+		// For client side telemetry intializing Dynamics365PortalAnalytics cookie object
+		
+		window["Microsoft"].Dynamic365.Portal.dynamics365PortalAnalytics = 'ZOnIr8P7Eb3lshjkWbV6R1TFOuMyQFcg26Nrk4SMd7qeO8px2cpm0w_aj48ikYr0rlphhdmXu-lQT0wnzxL4SpRmzgni2yfBR3uR_bw41XDfjUGgYWJopc9srg2b5jdAV-shvzhrw_5GEX58pP9ReA2'; // CodeQL [SM00430] False Positive: only alphanumeric chars allowed, for non-alphanumeric char it will return INVALID_CHARACTERS_IN_COOKIE 
+		
+
+    </script>
+	
+	<script type="text/javascript">
+
+		
+    </script>
+
+	
+		
+
+<div class="navbar-expand-xl navbar navbar-dark static-top" role="banner">
+  <div class="skip-to-content">
+    <a href="#mainContent">Skip to main content</a>
+  </div>
+  <div class="container custom-container">
+    <!--
+      div class="d-xs-block d-sm-none d-md-none d-lg-none  ">
+        <div class="xrm-editable-html&#32;xrm-attribute" data-languageContext="English"><div class="xrm-attribute-value"><a href='~/'>
+  <img src='/Logo-sm-64.png
+' alt='Company name logo
+' style='width: auto; height: 32px; margin: 0 10px;'>
+  
+    <h1 class='siteTitle custom-sitetitle'>Cloud Syndicate TTS</h1>
+  
+</a>
+</div></div>
+      </div
+    -->
+    <div class="d-xs-block d-sm-block d-md-block d-lg-block navbar-brand navbar-header">
+      <div class="xrm-editable-html xrm-attribute" data-languagecontext="English"><div class="xrm-attribute-value"><a href="~/">
+  <img src="/Logo-sm-64.png
+" alt="Company name logo
+" style="width: auto; height: 32px; margin: 0 10px;">
+  
+    <h1 class="siteTitle custom-sitetitle">Cloud Syndicate TTS</h1>
+  
+</a>
+</div></div>
+    </div>
+    <button type="button" class="navbar-toggler collapsed custom-navbar-toggler" title="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#navbar" aria-expanded="false" onclick="setHeight();">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navbar" class="navbar-collapse collapse" style="width: min-content; max-height: 853px;">
+      
+      
+        <nav aria-label="Main Navigation" class="ms-auto menu-bar " data-weblinks-maxdepth="2">
+          <ul class="nav navbar-nav weblinks">
+            
+              
+              
+                
+              
+              <li class="nav-item weblink ">
+                <a aria-label="Home" class="nav-link" href="/" aria-roledescription="link" title="Home" aria-current="page">
+                    Home
+                </a>
+                
+              </li>
+            
+              
+                <li class="nav-item divider-vertical" aria-hidden="true"></li>
+              
+              
+                
+              
+              <li class="nav-item weblink ">
+                <a aria-label="Resources" class="nav-link" href="/Resources/" aria-roledescription="link" title="Resources">
+                    Resources
+                </a>
+                
+              </li>
+            
+              
+                <li class="nav-item divider-vertical" aria-hidden="true"></li>
+              
+              
+                
+              
+              <li class="nav-item weblink ">
+                <a aria-label="Audio Download" class="nav-link" href="/Audio-Download/" aria-roledescription="link" title="Audio Download">
+                    Audio Download
+                </a>
+                
+              </li>
+            
+              
+                <li class="nav-item divider-vertical" aria-hidden="true"></li>
+              
+              
+                
+              
+              <li class="nav-item weblink ">
+                <a aria-label="Upload Files" class="nav-link" href="/Upload-Files/" aria-roledescription="link" title="Upload Files">
+                    Upload Files
+                </a>
+                
+              </li>
+            
+            
+            
+              <li class="nav-item divider-vertical" aria-hidden="true"></li>
+              <li class="nav-item dropdown">
+                <a id="search" class="nav-link navbar-icon" href="#" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-label="Search" title="Search">
+                  <span class="glyphicon fa-solid fa-magnifying-glass"></span>
+                </a>
+                <div class="dropdown-menu dropdown-search dropdown-menu-end">
+                  
+
+
+  
+
+<form method="GET" action="/search/" role="search" class="form-search">
+  <div class="input-group" style="display:table;">
+    
+
+    <label for="q" class="visually-hidden">
+      Search
+    </label>
+    <input type="text" class="form-control" style="display:table-cell;width:100%;font-size:14px;padding-top:5px;margin-left:0px;" id="q" name="q" placeholder="Search" value="" title="Search">
+    <div class="input-group-btn align-top" style="display:table-cell;text-align:left;">
+      <button type="submit" class="btn btn-primary" title="Search" aria-label="Search">
+        <span class="fa fa-search" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</form>
+
+
+                </div>
+              </li>
+            
+            <li class="nav-item divider-vertical" aria-hidden="true"></li>
+            
+            
+              <li class="nav-item dropdown">
+                
+                <a href="#" class="nav-link dropdown-toggle" aria-roledescription="link" title="Michael Delnessa" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-label="Michael Delnessa">
+                  <span class="username">Michael Delnessa</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  
+                  
+                    <li>
+                      <a class="dropdown-item" aria-label="Profile" aria-roledescription="link" href="/profile/">Profile</a>
+                    </li>
+                  
+                  <li class="dropdown-divider" role="separator" aria-hidden="true"></li>
+                  <li>
+                    <a class="dropdown-item" aria-label="Sign out" aria-roledescription="link" href="/Account/Login/LogOff?returnUrl=%2F" title="Sign out">
+                      Sign out
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            
+          </ul>
+          
+        </nav>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+<script type="text/javascript">
+  window.onload = function () {
+    if (window.navigator.appName == 'Microsoft Internet Explorer' || window.navigator.userAgent.indexOf('Trident') > 0) {
+      var searchElement = document.getElementById('search');
+      if (searchElement != null) searchElement.setAttribute('href', '');
+    }
+  };
+  function setHeight() {
+    var windowHeight = window.innerHeight - 140;
+    var navbar = document.getElementById('navbar');
+    if (navbar) {
+      navbar.style.maxHeight = windowHeight + 'px';
+    }
+  }
+  window.addEventListener('resize', function (event) {
+    setHeight();
+  });
+</script>
+
+	
+
+	<!-- add anti-forgery token-->
+	<div id="antiforgerytoken" data-url="/_layout/tokenhtml"></div>
+
+
+	
+		<!-- Client Telemetry init if telemetry enabled-->
+		<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/client-telemetry.bundle-f9f45b65a6.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/client-telemetry.bundle-f9f45b65a6.js" type="text/javascript"></script>
+
+	
+	
+	<!-- Client Telemetry Wrapper init -->
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/client-telemetry-wrapper.bundle-633e70f51b.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/client-telemetry-wrapper.bundle-633e70f51b.js" type="text/javascript"></script>
+
+	<script>
+		window.clientLogWrapper = new ClientLogWrapper();
+	</script>
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/preform.BootstrapV5.moment_2_29_4.bundle-cf8e0fd942.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/preform.BootstrapV5.moment_2_29_4.bundle-cf8e0fd942.js" type="text/javascript"></script>
+
+	
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/pcf-dependency.bundle-805a1661b7.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/pcf-dependency.bundle-805a1661b7.js" type="text/javascript"></script>
+
+					       <script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/pcf.bundle-582a4e04bd.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/pcf.bundle-582a4e04bd.js" type="text/javascript"></script>
+
+					       <script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/pcf-extended.bundle-b0e01b5622.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/pcf-extended.bundle-b0e01b5622.js" type="text/javascript"></script>
+
+					
+	<!-- Default studio template. Please do not modify -->
+<div id="mainContent" class="wrapper-body" role="main">
+    <div class="page-copy">
+      <div class="xrm-editable-html xrm-attribute"><div class="xrm-attribute-value"><div class="row sectionBlockLayout text-start" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px; background-image: url(&quot;/robot-readers.png&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-lg-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 300px; margin: 260px 0px; padding: 16px; justify-content: flex-end;">
+      <h2 style="text-align: right; color: var(--portalThemeColor7); font-weight: 700;">​<u>Welcome to Cloud Syndicate</u></h2>
+      <h4 style="text-align: right; color: var(--portalThemeColor7);">
+        ​​<span aria-label="Text ​&nbsp; &nbsp; &nbsp; Narrate Your World!" style="position: relative;">​&nbsp; &nbsp; &nbsp; <span aria-label="Text Narrate Your World!" style="position: relative; font-weight: normal;">Narrate Your World!</span></span>
+      </h4>
+      <a href="https://us-east-1pr8qcn4ls.auth.us-east-1.amazoncognito.com/login?client_id=5pf18ueuq5voofmprm6dp96i8p&amp;response_type=code&amp;scope=email+openid+phone&amp;redirect_uri=https%3A%2F%2Fcloudsyndicate-text-converter.powerappsportals.com%2FResources%2F" rel="noopener noreferrer" class="btn button1" style="margin-left: auto; margin-right: 0;">Click Here To Login</a>
+    </div>
+  </div>
+</div>
+<div class="row sectionBlockLayout text-left" style="display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px; background-image: url(&quot;/Blue1.jpg&quot;); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+  <div class="container" style="padding: 0px; display: flex; flex-wrap: wrap;">
+    <div class="col-md-12 columnBlockLayout" style="flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; margin: 30px 0px; padding: 16px;">
+      <p style="color: var(--portalThemeColor1); font-family: Crimson Text; font-size: 27px; text-align: justify;">Text-to-speech technology offers significant benefits across a variety of real-world scenarios, from providing accessibility for those with disabilities to enabling enhanced productivity for busy professionals. It serves as a powerful tool in education, communication, entertainment, and more. Depending on the specific use case, a TTS app can make a significant positive impact, improving quality of life, learning experiences, and overall efficiency. To get started, click on the login button above.<br><br>Created by Mickyas Delnessa and Alan Lin</p>
+    </div>
+  </div>
+</div>
+</div></div>
+    </div>
+</div>
+
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/pcf-loader.bundle-f4a0e619b8.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/pcf-loader.bundle-f4a0e619b8.js" type="text/javascript"></script>
+
+		
+		<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/pvaembedded.bundle-ee552b63e2.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/pvaembedded.bundle-ee552b63e2.js" type="text/javascript"></script>
+
+<!-- Power virtual agents web template V2.0-->
+
+
+
+
+
+<div class="pva-floating-style" style="position: absolute; z-index: 1000;">
+    <div name="webChat"><div class="pva-embedded-web-chat" data-minimized="true"><div class="pva-embedded-web-chat-widget-container"><button class="pva-embedded-web-chat-widget" type="button" aria-label="Open chat window" aria-describedby="pva-embedded-web-chat-widget-tooltip-text" aria-hidden="false" tabindex="0"><span class="pva-embedded-web-chat-widget-tooltip-text" id="pva-embedded-web-chat-widget-tooltip-text">Open chat window</span><i class="pva-embedded-web-chat-widget-icon"><svg fill="none" height="24" viewBox="0 0 44 45" width="24" style="vertical-align: baseline;"><path d="M32.7243 17.5558C32.8164 17.6201 32.9045 17.6891 32.9883 17.7624C32.9935 17.6752 32.9961 17.5873 32.9961 17.4988V8.59629C32.9961 6.14042 30.981 4.14955 28.4953 4.14955L21.4931 4.14855L21.4947 2.66828L21.481 2.46715C21.3817 1.74366 20.754 1.18604 19.9945 1.18604L19.7909 1.19957C19.0586 1.29772 18.4942 1.91788 18.4942 2.66828L18.4926 4.14855L11.4923 4.14955C9.00657 4.14955 6.99149 6.14042 6.99149 8.59629V17.4988C6.99149 19.9547 9.00657 21.9456 11.4923 21.9456H27.0634C27.0765 21.9114 27.0891 21.877 27.1011 21.8425L27.1188 21.7902L28.0194 19.0545L28.0277 19.0313C28.2406 18.4357 28.6352 17.9203 29.1569 17.5558C29.6786 17.1913 30.3018 16.9957 30.9406 16.9957C31.5794 16.9957 32.2026 17.1913 32.7243 17.5558ZM15.4916 10.0785C16.8717 10.0785 17.9906 11.1839 17.9906 12.5475C17.9906 13.9111 16.8717 15.0165 15.4916 15.0165C14.1114 15.0165 12.9926 13.9111 12.9926 12.5475C12.9926 11.1839 14.1114 10.0785 15.4916 10.0785ZM24.4786 10.0785C25.8588 10.0785 26.9777 11.1839 26.9777 12.5475C26.9777 13.9111 25.8588 15.0165 24.4786 15.0165C23.0985 15.0165 21.9796 13.9111 21.9796 12.5475C21.9796 11.1839 23.0985 10.0785 24.4786 10.0785ZM22.0791 24.9731L22.3042 24.9008H8.49884C6.01312 24.9008 3.99805 26.8917 3.99805 29.3476V31.1407C3.99805 33.3004 4.95153 35.3526 6.60906 36.7605C9.73535 39.4161 14.2138 40.7137 19.9938 40.7137C24.1464 40.7137 27.6285 40.0439 30.4214 38.6821C29.9884 38.6012 29.5756 38.4292 29.212 38.1752C28.6903 37.8108 28.2957 37.2953 28.0829 36.6997L28.0746 36.6765L27.1735 33.9394L27.1724 33.9362C27.0415 33.5447 26.8442 33.179 26.5899 32.8544C26.4962 32.7348 26.3949 32.6209 26.2863 32.5133L25.5685 31.996L24.8508 31.6336L22.0791 30.7443L22.0556 30.7361C21.4531 30.5263 20.931 30.137 20.5617 29.6217C20.1923 29.1063 19.9938 28.4904 19.9938 27.8587C19.9938 27.227 20.1923 26.6111 20.5617 26.0957C20.931 25.5804 21.4531 25.1911 22.0556 24.9813L22.0791 24.9731ZM27.7029 31.1179C27.8706 31.2842 28.0272 31.4602 28.1718 31.6448C28.5656 32.1475 28.871 32.714 29.0734 33.3209L29.9691 36.0418C30.044 36.2515 30.183 36.4331 30.3669 36.5615C30.5508 36.69 30.7705 36.759 30.9957 36.759C31.221 36.759 31.4407 36.69 31.6246 36.5615C31.7886 36.4469 31.9169 36.2901 31.9959 36.1086C32.0055 36.0867 32.0143 36.0644 32.0224 36.0418L32.9181 33.3209C33.1966 32.4937 33.6668 31.742 34.2911 31.1256C34.9155 30.5092 35.6769 30.0451 36.5148 29.7701L39.2709 28.8858C39.4833 28.8119 39.6672 28.6746 39.7973 28.4931C39.9275 28.3116 39.9973 28.0947 39.9973 27.8723C39.9973 27.6499 39.9275 27.433 39.7973 27.2515C39.6672 27.07 39.4833 26.9328 39.2709 26.8588L39.2157 26.8452L36.4597 25.9609C35.6218 25.6859 34.8604 25.2218 34.236 24.6054C33.6117 23.989 33.1415 23.2373 32.863 22.4101L31.9673 19.6892C31.8923 19.4795 31.7533 19.2979 31.5695 19.1695C31.3856 19.041 31.1659 18.972 30.9406 18.972C30.7154 18.972 30.4957 19.041 30.3118 19.1695C30.1279 19.2979 29.9889 19.4795 29.914 19.6892L29.0183 22.4101L28.9954 22.4775C28.7199 23.2724 28.2667 23.9963 27.6692 24.5954C27.0548 25.2114 26.3044 25.6787 25.4767 25.9609L22.7206 26.8452C22.5082 26.9192 22.3243 27.0564 22.1941 27.2379C22.064 27.4194 21.9942 27.6363 21.9942 27.8587C21.9942 28.0811 22.064 28.298 22.1941 28.4795C22.3243 28.661 22.5082 28.7983 22.7206 28.8722L25.4767 29.7565C26.3161 30.0329 27.0784 30.4991 27.7029 31.1179ZM42.0327 38.6654L43.5638 39.1566L43.5944 39.1642C43.7125 39.2053 43.8147 39.2815 43.8869 39.3824C43.9592 39.4832 43.998 39.6037 43.998 39.7272C43.998 39.8508 43.9592 39.9713 43.8869 40.0721C43.8147 40.173 43.7125 40.2492 43.5944 40.2903L42.0633 40.7816C41.5978 40.9344 41.1748 41.1922 40.8279 41.5347C40.4811 41.8771 40.2199 42.2947 40.0651 42.7542L39.5675 44.2659C39.5259 44.3824 39.4487 44.4832 39.3465 44.5546C39.2444 44.626 39.1223 44.6643 38.9972 44.6643C38.872 44.6643 38.75 44.626 38.6478 44.5546C38.5457 44.4832 38.4684 44.3824 38.4268 44.2659L37.9292 42.7542C37.7755 42.2933 37.5147 41.8742 37.1678 41.5304C36.8209 41.1866 36.3974 40.9276 35.931 40.774L34.3999 40.2828C34.2819 40.2417 34.1797 40.1654 34.1074 40.0646C34.0351 39.9637 33.9963 39.8432 33.9963 39.7197C33.9963 39.5962 34.0351 39.4756 34.1074 39.3748C34.1797 39.274 34.2819 39.1977 34.3999 39.1566L35.931 38.6654C36.3909 38.5086 36.8077 38.249 37.1491 37.9068C37.4904 37.5645 37.7469 37.149 37.8986 36.6927L38.3962 35.1811C38.4378 35.0646 38.515 34.9637 38.6172 34.8923C38.7193 34.821 38.8414 34.7827 38.9665 34.7827C39.0917 34.7827 39.2137 34.821 39.3159 34.8923C39.418 34.9637 39.4953 35.0646 39.5369 35.1811L40.0345 36.6927C40.1893 37.1523 40.4504 37.5699 40.7973 37.9123C41.1442 38.2547 41.5672 38.5126 42.0327 38.6654Z" fill="#FFFFFF"></path></svg></i></button></div><div class="pva-embedded-web-chat-window-container"><div class="pages-chatbot-header pages-chatbot-header-hidden" aria-hidden="true" tabindex="-1">CloudSyndicate Text Converter bot<div class="pages-chatbot-header-button-container"><button class="pages-chatbot-header-minimize-button" type="button" aria-label="Minimize" aria-hidden="false"><svg fill="rgb(255, 255, 255)" viewBox="0 0 512 512"><path d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z"></path></svg></button><div class="pages-chatbot-header-minimize-tooltip">Minimize</div></div></div><div class="pva-embedded-web-chat-window pva-embedded-web-chat-window-hidden" title="Chat window" role="main" aria-hidden="true" tabindex="-1"><div class="webchat__css-custom-properties webchat--css-kuupf-kfm3b5"><div class="webchat--css-kuupf-j7qwjs webchat--css-kuupf-isn8pt" role="complementary"><div aria-live="polite" aria-relevant="all" class="webchat__toaster webchat--css-kuupf-1b39fog webchat--css-kuupf-up31fo" role="log"><div class="webchat__toaster__list" id="webchat__toaster__list__h0hl0"></div></div><div aria-labelledby="webchat__keyboard-help__header--rvhlg" class="webchat__keyboard-help webchat--css-kuupf-at18kd" role="dialog"><div class="webchat__keyboard-help__border"><div class="webchat__keyboard-help__box"><div class="webchat__keyboard-help__scrollable"><button aria-label="Close" class="webchat__keyboard-help__close-button" type="button"><div class="webchat__keyboard-help__close-button-border"><svg class="webchat__keyboard-help__close-button-image" focusable="false" role="presentation" viewBox="0 0 2048 2048" xmlns="http://www.w3.org/2000/svg"><path d="M2048 136l-888 888 888 888-136 136-888-888-888 888L0 1912l888-888L0 136 136 0l888 888L1912 0l136 136z"></path></svg></div></button><h2 class="webchat__keyboard-help__header" id="webchat__keyboard-help__header--rvhlg">Keyboard controls</h2><article class="webchat__keyboard-help__section"><header><h3 class="webchat__keyboard-help__sub-header">Chat window</h3></header><div class="webchat__keyboard-help__two-panes"><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--light" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="#C8C6C4" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="#323130" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="#C8C6C4" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="#C8C6C4" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="#323130" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="#323130" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="#323130" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="#323130" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 5.64645C116.524 5.45118 116.84 5.45118 117.036 5.64645L120.218 8.82843C120.413 9.02369 120.413 9.34027 120.218 9.53553C120.022 9.7308 119.706 9.7308 119.51 9.53553L117.182 7.20711V192.793L119.51 190.464C119.706 190.269 120.022 190.269 120.218 190.464C120.413 190.66 120.413 190.976 120.218 191.172L117.036 194.354C116.84 194.549 116.524 194.549 116.328 194.354L113.146 191.172C112.951 190.976 112.951 190.66 113.146 190.464C113.342 190.269 113.658 190.269 113.854 190.464L116.182 192.793V7.20711L113.854 9.53553C113.658 9.7308 113.342 9.7308 113.146 9.53553C112.951 9.34027 112.951 9.02369 113.146 8.82843L116.328 5.64645Z" fill="#323130" fill-rule="evenodd"></path></svg><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--dark" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="#484644" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="#F3F2F1" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="#484644" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="#484644" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="#F3F2F1" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="#F3F2F1" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="#F3F2F1" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="#F3F2F1" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 5.64645C116.524 5.45118 116.84 5.45118 117.036 5.64645L120.218 8.82843C120.413 9.02369 120.413 9.34027 120.218 9.53553C120.022 9.7308 119.706 9.7308 119.51 9.53553L117.182 7.20711V192.793L119.51 190.464C119.706 190.269 120.022 190.269 120.218 190.464C120.413 190.66 120.413 190.976 120.218 191.172L117.036 194.354C116.84 194.549 116.524 194.549 116.328 194.354L113.146 191.172C112.951 190.976 112.951 190.66 113.146 190.464C113.342 190.269 113.658 190.269 113.854 190.464L116.182 192.793V7.20711L113.854 9.53553C113.658 9.7308 113.342 9.7308 113.146 9.53553C112.951 9.34027 112.951 9.02369 113.146 8.82843L116.328 5.64645Z" fill="#F3F2F1" fill-rule="evenodd"></path></svg><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--high-contrast" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="white" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="white" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="white" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="white" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="white" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="white" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="white" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="white" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 5.64645C116.524 5.45118 116.84 5.45118 117.036 5.64645L120.218 8.82843C120.413 9.02369 120.413 9.34027 120.218 9.53553C120.022 9.7308 119.706 9.7308 119.51 9.53553L117.182 7.20711V192.793L119.51 190.464C119.706 190.269 120.022 190.269 120.218 190.464C120.413 190.66 120.413 190.976 120.218 191.172L117.036 194.354C116.84 194.549 116.524 194.549 116.328 194.354L113.146 191.172C112.951 190.976 112.951 190.66 113.146 190.464C113.342 190.269 113.658 190.269 113.854 190.464L116.182 192.793V7.20711L113.854 9.53553C113.658 9.7308 113.342 9.7308 113.146 9.53553C112.951 9.34027 112.951 9.02369 113.146 8.82843L116.328 5.64645Z" fill="white" fill-rule="evenodd"></path></svg><div class="webchat__keyboard-help__notes-pane"><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Move between items in the chat window</h4><p class="webchat__keyboard-help__notes-text">Tab key</p><p class="webchat__keyboard-help__notes-text">Shift + tab key</p></section><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Do action</h4><p class="webchat__keyboard-help__notes-text">Enter key</p></section></div></div></article><article class="webchat__keyboard-help__section"><header><h3 class="webchat__keyboard-help__header">Chat history</h3></header><div class="webchat__keyboard-help__two-panes"><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--light" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="#C8C6C4" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="#323130" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="#323130" stroke-dasharray="2 2" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="#323130" stroke-dasharray="2 2" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="#C8C6C4" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="#C8C6C4" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="#C8C6C4" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="#C8C6C4" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 7.64645C116.524 7.45118 116.84 7.45118 117.036 7.64645L120.218 10.8284C120.413 11.0237 120.413 11.3403 120.218 11.5355C120.022 11.7308 119.706 11.7308 119.51 11.5355L117.182 9.20711V156.793L119.51 154.464C119.706 154.269 120.022 154.269 120.218 154.464C120.413 154.66 120.413 154.976 120.218 155.172L117.036 158.354C116.84 158.549 116.524 158.549 116.328 158.354L113.146 155.172C112.951 154.976 112.951 154.66 113.146 154.464C113.342 154.269 113.658 154.269 113.854 154.464L116.182 156.793V9.20711L113.854 11.5355C113.658 11.7308 113.342 11.7308 113.146 11.5355C112.951 11.3403 112.951 11.0237 113.146 10.8284L116.328 7.64645Z" fill="#323130" fill-rule="evenodd"></path></svg><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--dark" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="#484644" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="#F3F2F1" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="#F3F2F1" stroke-dasharray="2 2" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="#F3F2F1" stroke-dasharray="2 2" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="#484644" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="#484644" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="#484644" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="#484644" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 7.64645C116.524 7.45118 116.84 7.45118 117.036 7.64645L120.218 10.8284C120.413 11.0237 120.413 11.3403 120.218 11.5355C120.022 11.7308 119.706 11.7308 119.51 11.5355L117.182 9.20711V156.793L119.51 154.464C119.706 154.269 120.022 154.269 120.218 154.464C120.413 154.66 120.413 154.976 120.218 155.172L117.036 158.354C116.84 158.549 116.524 158.549 116.328 158.354L113.146 155.172C112.951 154.976 112.951 154.66 113.146 154.464C113.342 154.269 113.658 154.269 113.854 154.464L116.182 156.793V9.20711L113.854 11.5355C113.658 11.7308 113.342 11.7308 113.146 11.5355C112.951 11.3403 112.951 11.0237 113.146 10.8284L116.328 7.64645Z" fill="#F3F2F1" fill-rule="evenodd"></path></svg><svg class="webchat__keyboard-help__image webchat__keyboard-help__image--high-contrast" fill="none" focusable="false" height="200" role="presentation" viewBox="0 0 121 200" width="121" xmlns="http://www.w3.org/2000/svg"><rect height="199" stroke="white" width="109" x="0.5" y="0.5"></rect><rect height="156" stroke="white" width="102" x="3.5" y="4.5"></rect><rect height="42" stroke="white" stroke-dasharray="2 2" width="93" x="7.5" y="8.5"></rect><rect height="99" stroke="white" stroke-dasharray="2 2" width="93" x="7.5" y="55.5"></rect><rect height="13" stroke="white" width="102" x="3.5" y="182.5"></rect><rect height="13" stroke="white" width="32" x="3.5" y="165.5"></rect><rect height="13" stroke="white" width="32" x="38.5" y="165.5"></rect><rect height="13" stroke="white" width="32" x="73.5" y="165.5"></rect><path clip-rule="evenodd" d="M116.328 7.64645C116.524 7.45118 116.84 7.45118 117.036 7.64645L120.218 10.8284C120.413 11.0237 120.413 11.3403 120.218 11.5355C120.022 11.7308 119.706 11.7308 119.51 11.5355L117.182 9.20711V156.793L119.51 154.464C119.706 154.269 120.022 154.269 120.218 154.464C120.413 154.66 120.413 154.976 120.218 155.172L117.036 158.354C116.84 158.549 116.524 158.549 116.328 158.354L113.146 155.172C112.951 154.976 112.951 154.66 113.146 154.464C113.342 154.269 113.658 154.269 113.854 154.464L116.182 156.793V9.20711L113.854 11.5355C113.658 11.7308 113.342 11.7308 113.146 11.5355C112.951 11.3403 112.951 11.0237 113.146 10.8284L116.328 7.64645Z" fill="white" fill-rule="evenodd"></path></svg><div class="webchat__keyboard-help__notes-pane"><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Move between messages</h4><p class="webchat__keyboard-help__notes-text">Arrow up key</p><p class="webchat__keyboard-help__notes-text">Arrow down key</p></section><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Access items in message</h4><p class="webchat__keyboard-help__notes-text">Enter key</p></section><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Move between items in a message</h4><p class="webchat__keyboard-help__notes-text">Tab key</p><p class="webchat__keyboard-help__notes-text">Shift + tab key</p></section><section class="webchat__keyboard-help__notes"><h4 class="webchat__keyboard-help__notes-header">Exit message</h4><p class="webchat__keyboard-help__notes-text">Escape key</p></section></div></div></article></div></div></div></div><div aria-label="Chat history, press arrow keys to navigate." class="webchat__basic-transcript webchat--css-kuupf-16qv0no webchat--css-kuupf-1tdc372 webchat--css-kuupf-1rr4qq7" dir="ltr" role="group" tabindex="0" aria-activedescendant="webchat__transcript-focus-han__activity-1upzf"><div aria-live="polite" aria-roledescription="chat history" class="webchat__live-region-transcript webchat--css-kuupf-1je9q5d" role="log"></div><div tabindex="0"></div><div class="react-scroll-to-bottom--css-qjjnv-1n7m0yu webchat__basic-transcript__scrollable"><div aria-hidden="true" class="webchat__basic-transcript__filler"></div><section aria-roledescription="chat history" class="webchat--css-kuupf-1l95nvm webchat__basic-transcript__transcript" role="feed"><article class="webchat__basic-transcript__activity webchat__basic-transcript__activity--read"><div aria-labelledby="webchat__basic-transcript__active-descendant-label--1upzf" class="webchat__basic-transcript__activity-active-descendant" id="webchat__transcript-focus-han__activity-1upzf" role="article"><div aria-hidden="true" class="webchat--css-kuupf-111jw2m" id="webchat__basic-transcript__active-descendant-label--1upzf">Bot true said: Hi Michael Delnessa, I’m CloudSyndicate Text Converter bot! How can I help you today?</div></div><div tabindex="0"></div><div><div class="webchat__basic-transcript__activity-body"><div aria-labelledby="webchat__stacked-layout__id--mtizf" class="webchat__stacked-layout webchat--css-kuupf-rctxl4 webchat--css-kuupf-1vap6r webchat__stacked-layout--show-avatar webchat__stacked-layout--top-callout"><div class="webchat__stacked-layout__main"><div class="webchat__stacked-layout__avatar-gutter"><div aria-hidden="true" class="webchat__defaultAvatar webchat--css-kuupf-1c6pw13 webchat--css-kuupf-1ms7ti7"><div class="webchat__initialsAvatar webchat--css-kuupf-1h0zvpv webchat--css-kuupf-l3b7uo"><div class="webchat__initialsAvatar__initials"></div></div><div class="webchat__imageAvatar webchat--css-kuupf-o7d8eg webchat--css-kuupf-1wvn32q"><div class="webchat--css-kuupf-17j40uk webchat__imageAvatar__image" style="height: 100%; width: 100%;"><img alt="" src="https://cloudsyndicate-text-converter.powerappsportals.com/PowerVaEmbedded/src/assets/BotDefaultIcon.svg"></div></div></div></div><div class="webchat__stacked-layout__content"><div aria-roledescription="message" class="webchat__stacked-layout__message-row" id="webchat__stacked-layout__id--mtizf" role="group"><div class="webchat--css-kuupf-111jw2m">Bot true said:</div><div class="webchat__bubble webchat__bubble--hide-nub webchat__bubble--nub-on-top webchat--css-kuupf-1qo0vqe webchat--css-kuupf-1ssl94x webchat__stacked-layout__message"><div class="webchat__bubble__nub-pad"></div><div class="webchat__bubble__content"><div class="webchat__text-content webchat__text-content--is-markdown webchat--css-kuupf-nldg41"><div class="webchat__text-content__markdown webchat__render-markdown webchat--css-kuupf-bafhim"><p>Hi Michael Delnessa, I’m CloudSyndicate Text Converter bot! How can I help you today?</p>
+</div></div></div></div></div></div><div class="webchat__stacked-layout__alignment-pad"></div></div><div class="webchat__stacked-layout__status"><div class="webchat__stacked-layout__avatar-gutter"></div><div class="webchat__stacked-layout__nub-pad"></div><span class="webchat__activity-status--slotted webchat__activity-status webchat--css-kuupf-97vy13"><div class="webchat--css-kuupf-111jw2m">Sent at March 19 at 10:28 PM</div><span aria-hidden="true">Today</span></span><div class="webchat__stacked-layout__alignment-pad"></div></div></div></div></div><div tabindex="0"></div><div class="webchat__basic-transcript__activity-indicator webchat__basic-transcript__activity-indicator--focus"></div></article></section></div><div tabindex="0"></div><div aria-labelledby="webchat__basic-transcript__terminator-label--03sjw" class="webchat__basic-transcript__terminator" role="note" tabindex="0"><div class="webchat__basic-transcript__terminator-body"><div class="webchat__basic-transcript__terminator-text" id="webchat__basic-transcript__terminator-label--03sjw">End of chat history</div></div></div><div class="webchat__basic-transcript__focus-indicator"></div></div><div class="webchat--css-kuupf-111jw2m">Connectivity Status: Unable to connect.</div><div aria-hidden="true" class="webchat__connectivityStatus webchat--css-kuupf-h8snok" dir="ltr"><svg alt="" class="" height="16" viewBox="0 0 13.1 13.1" width="16"><path d="M6.5,13C2.9,13,0,10.1,0,6.5S2.9,0,6.5,0S13,2.9,13,6.5S10.1,13,6.5,13z M6.1,3.5v4.3h0.9V3.5H6.1z M6.1,8.7v0.9h0.9V8.7H6.1z" fill-rule="evenodd"></path></svg>Unable to connect.</div><div aria-invalid="false" class="webchat__send-box webchat--css-kuupf-17dm1da webchat--css-kuupf-1bfjcn2 webchat--css-kuupf-6su6fj" dir="ltr" role="form"><div class="webchat__send-box__main"><form aria-disabled="false" class="webchat__send-box-text-box webchat--css-kuupf-titn9n webchat--css-kuupf-l8jf8i webchat__send-box__text-box"><input class="webchat__send-box-text-box__input" placeholder="Type your message" aria-label="Message input box" data-id="webchat-sendbox-input" inputmode="text" type="text" value=""></form><button class="webchat--css-kuupf-1r0ige7 webchat__icon-button webchat__icon-button--stretch webchat__send-button webchat__send-box__button webchat__send-box__button--align-stretch" title="Send" type="button"><div class="webchat__icon-button__shade"></div><svg class="webchat__send-icon webchat--css-kuupf-varv44" height="28" viewBox="0 0 45.7 33.8" width="28"><path clip-rule="evenodd" d="M8.55 25.25l21.67-7.25H11zm2.41-9.47h19.26l-21.67-7.23zm-6 13l4-11.9L5 5l35.7 11.9z"></path></svg><div class="webchat__icon-button__keyboard-focus-indicator"></div></button></div></div></div><span class="webchat__submit-error-message webchat--css-kuupf-1e9i5sl" id="webchat__send-box__error-message-id--ajpml" role="alert"></span></div></div><div class="pva-privacy-message" aria-hidden="true" tabindex="-1" style="display: none;"><p>Bot responses are AI-generated so inaccuracies are possible.</p></div></div></div></div>
+    <script type="text/javascript" id="pvaChatInlineScript">
+        var botConfig = {"skillConfigViewName":"CloudSyndicate Text Converter bot Answers"};
+        // Learn more about advanced configuration: https://go.microsoft.com/fwlink/?linkid=2147420
+        const webChatHeaderStyleOptions = botConfig?.webChatHeaderStyleOptions;
+        const webChatCanvasStyleOptions = botConfig?.webChatCanvasStyleOptions;
+        const webChatWidgetStyleOptions = botConfig?.webChatWidgetStyleOptions;
+        var botMaximizedByDefault = botConfig?.botMaximizedByDefault;
+        var botTitle = botConfig?.headerText;
+        var region = "prod";
+        var botTemplate = "powerpages-1.0.0";
+        var botAuthenticationMode = "4";
+        var isNewWidget = "True";
+
+        if(!botTitle || botTitle == undefined || botTitle == "" || botTitle.length == 0)
+        {
+           botTitle = "CloudSyndicate Text Converter bot";
+        }
+
+        if(!botMaximizedByDefault || botMaximizedByDefault == undefined)
+        {
+           botMaximizedByDefault = false;
+        }
+
+        let chatWidth = "320px";
+        let chatHeight =  "500px";
+        if (screen.width > 992) {
+	        chatWidth = "25%";
+            chatHeight =  "80%";
+        }
+        window.PvaEmbeddedWebChat.renderWebChat(
+        {
+            "container": document.getElementsByName('webChat')[0],
+            "botSchemaName": "cred5_bd6c24fa-4205-45b5-8910-670077283343",
+            "environmentId": "da7c4066-07ae-ead2-8c49-52ea3b9c7515",
+            "width": chatWidth,
+            "height": chatHeight,
+            "client": "msportals", // client and version is needed for the ease of future breaking changes
+            "version": "v1",
+            "headerText": botTitle,
+            "webChatCanvasStyleOptions": webChatCanvasStyleOptions,
+            "webChatHeaderStyleOptions": webChatHeaderStyleOptions,
+            "webChatWidgetStyleOptions": webChatWidgetStyleOptions,
+            "accessibilityLanguage": "en-US",
+            "botMaximizedByDefault": botMaximizedByDefault,
+            "region": region,
+            "botTemplate": botTemplate,
+            "botAuthenticationMode": botAuthenticationMode,
+            "isNewWidget": isNewWidget
+        });
+    </script>
+</div>
+	
+
+	
+		<div id="pp-native-controls-react-root"></div>
+<script>window._nativeControlConfig = { "publicPath":"https://content.powerapps.com/resource/powerappsportal/controls", "versions": {"pcf_loader":"0.0.31","pcf_controls":"3.10.0","mf_shared":"0.2.11","host":"0.9.2","data_grid":"1.6.8","controls_fluent_v9":"0.0.34"} }</script>
+<script defer="defer" src="https://content.powerapps.com/resource/powerappsportal/controls/host/main.b26f42703f.chunk.js"></script>
+		
+	
+	
+		<footer role="contentinfo" class="footer" data-component-theme="portalThemeColor5">
+  <div class="footer-bottom d-print-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 text-start">
+          <div class="xrm-editable-html xrm-attribute" data-languagecontext="English"><div class="xrm-attribute-value"><p class="smallText">Copyright © <span id="year">2025</span>. All rights reserved.</p></div></div>
+        </div>
+        
+      </div>
+    </div>
+</div></footer>
+
+<script type="text/javascript">
+  window.onload = function() {
+    const accessibilityLinkContainer = document.getElementById("accessibilityLinkContainer");
+    switch(window.navigator.language) {
+      case "fr":
+        if (accessibilityLinkContainer != null) {
+          const accessibilityText="Accessibilité : partiellement conforme";
+          const frenchAccessibilityAnchor = document.createElement("a");
+          frenchAccessibilityAnchor.id = "frenchAccesssibleLink";
+          frenchAccessibilityAnchor.target = "_blank";
+          frenchAccessibilityAnchor.href = "https://go.microsoft.com/fwlink/?linkid=2163806";
+          frenchAccessibilityAnchor.title = accessibilityText;
+          frenchAccessibilityAnchor.innerText = accessibilityText;
+          accessibilityLinkContainer.appendChild(frenchAccessibilityAnchor);
+        }
+        break;
+      case "it":
+        if (accessibilityLinkContainer != null) {
+          const accessibilityText="Accessibilità: parzialmente conforme";
+          const italianAccessibilityAnchor = document.createElement("a");
+          italianAccessibilityAnchor.id = "italianAccesssibleLink";
+          italianAccessibilityAnchor.target = "_blank";
+          italianAccessibilityAnchor.href = "https://go.microsoft.com/fwlink/?linkid=2208177";
+          italianAccessibilityAnchor.title = accessibilityText;
+          italianAccessibilityAnchor.innerText = accessibilityText;
+          accessibilityLinkContainer.appendChild(italianAccessibilityAnchor);
+        }
+        break;
+      default: 
+        accessibilityLinkContainer.remove();
+    }
+  };
+ </script>
+	
+
+	<script type="text/javascript">
+
+		function trackCopilotCustomUsage(botSchema) {
+			const request = {
+                botSchemaName: botSchema
+			}
+            var json = JSON.stringify(request);
+            shell.ajaxSafePost({
+                type: "POST",
+                contentType: "application/json",
+                url: "/_services/copilot/TrackUsage",
+                data: json
+            }).done(function () {
+            }).fail(function (jqXhr) {
+            });
+		}
+
+		function findAndLogCustomCopilotUsage() {
+            const pageSource = document.documentElement.outerHTML;
+            const customPvaBotWebchatRegex = /api\.(preprod\.|test\.)?powerplatform\.(com|us|cn|appsplatform\.us)\/powervirtualagents\/botsbyschema\/([^/]+)\/directline\/token/;
+			const customPvaBotIframeRegex = /powerva\.microsoft\.com\/environments\/([0-9a-fA-F\-]+)\/bots\/([^/]+)\/webchat/;
+			const omniChannelRegex = /livechatwidget\/scripts\/LiveChatBootstrapper\.js/;
+
+			const matchPvaBotWebchat = pageSource.match(customPvaBotWebchatRegex);
+            if (matchPvaBotWebchat && matchPvaBotWebchat[3]) {
+                trackCopilotCustomUsage(matchPvaBotWebchat[3]);
+            }
+
+            const matchPvaBotIframe = pageSource.match(customPvaBotIframeRegex);
+            if (matchPvaBotIframe && matchPvaBotIframe[2]) {
+                trackCopilotCustomUsage(matchPvaBotIframe[2]);
+            }
+
+			const matchOmniChannel = pageSource.match(omniChannelRegex);
+            if (matchOmniChannel && matchOmniChannel[0]) {
+                trackCopilotCustomUsage("omnichannelWidget");
+            }
+		}
+
+        window.addEventListener("load", function () {
+            findAndLogCustomCopilotUsage();
+        });
+    </script>
+
+	
+	
+	
+	
+	
+	
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/bootstrap.BootstrapV5.bundle-be8391e97d.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/bootstrap.BootstrapV5.bundle-be8391e97d.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/postpreform.BootstrapV5.bundle-11a5a91493.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/postpreform.BootstrapV5.bundle-11a5a91493.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/app.BootstrapV5.bundle-612df4da3a.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/app.BootstrapV5.bundle-612df4da3a.js" type="text/javascript"></script>
+
+	<script onerror="javascript: var target = event.target; var script = document.createElement('script'); script.crossOrigin = target.crossOrigin; script.src = '/dist/default-1033.moment_2_29_4.bundle-eda4e638fd.js'; script.type = 'text/javascript'; target.insertAdjacentElement('afterend',script);" src="https://content.powerapps.com/resource/powerappsportal/dist/default-1033.moment_2_29_4.bundle-eda4e638fd.js" type="text/javascript"></script>
+
+	
+	
+	
+	
+	<script>
+		//this event will update the title of the page based on active breadcrumb
+		$('.breadcrumb').ready(function () {
+			if ($('.breadcrumb').is(':visible')) {
+				document.querySelector('title').innerHTML = ($('.breadcrumb > li.active').text() + "");
+			}
+		});
+
+		function GoToNewEditor() {
+			var editCmsUrlSegment = "EditInCms";
+			var currentUrl = window.location.href;
+			if (currentUrl.indexOf('?') > -1) {
+				var urlSegments = currentUrl.split("?");
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname + '?' + urlSegments[1];
+			}
+			else {
+				window.location.href = window.location.origin + '/' + editCmsUrlSegment + window.location.pathname;
+			}
+		}
+	</script>
+	
+		
+	
+	
+		
+			<script>
+				if ('serviceWorker' in navigator) {
+					navigator.serviceWorker.getRegistrations().then(function(registrations) {
+					for(let registration of registrations) {
+						registration.unregister();
+					}}).catch(function(err) {
+					console.log('Service Worker unregister action failed: ', err);
+					});
+				}
+			</script>
+		
+	
+		
+	<!--Start Show Session Expire Warning Popup here -->
+    
+
+
+
+
+</body>
